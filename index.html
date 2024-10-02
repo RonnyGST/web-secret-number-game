@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src = "src.js"></script>
+        <title>Secret Number Game</title>
+    </head>
+    
+    
+    <body onload="numberRandom(10)">
+        <h1>Jogo do número secreto!</h1>
+        
+        <table border="1" id="scoreBoard">
+            <th>Tentativas totais</th>
+            <th>Acertos</th>
+            <th>% de acerto</th>
+            <th>Score</th>
+            
+            <tr>
+                <td id="cellA">0</td>
+                <td id="cellB">0</td>
+                <td id="cellC">% 0.00</td>
+                <td id="cellD">0</td>
+            </tr>
+        </table>
+        
+        <h2>De 0 a <span id="numMax">10</span></h2>
+        <input type="number" id="tryInput" placeholder="Number..."/>
+        
+        <input type="button" name="" id="btnTry" value="Tentativa" onclick="tryNumber()"/>
+        <br>
+        <input type="button" name="" id="btnRestart" value="Jogar novamente" onclick="restart()"/>
+        
+        <br />
+        
+        <input type="button" name="" id="" value="Super fácil" onclick="numberRandom(10)"/>
+        
+        <input type="button" name="" id="" value="Fácil" onclick="numberRandom(30)"/>
+        
+        <input type="button" name="" id="" value="Normal" onclick="numberRandom(50)"/>
+        
+        <input type="button" name="" id="" value="Difícil" onclick="numberRandom(100)"/>
+        
+        <input type="button" name="" id="" value="Muito difícil" onclick="numberRandom(1000)"/>
+        
+        
+        <h2 id="output"></h2>
+    </body>
+</html>

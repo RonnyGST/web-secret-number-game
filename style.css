@@ -1,0 +1,36 @@
+body, td {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2%;
+}
+
+table {
+    margin-bottom: 1%;
+    margin: 0% 40%;
+}
+
+input {
+    margin: 0.5%;
+    font-size: 150%;
+}
+
+
+#btnRestart {
+    margin: 5% 0% 10% 0%;
+}
+
+#btnTry {
+    margin-top: 1%;
+}
+#btnTry:active {
+    width: 10%;
+    height: 8%;
+    background-color: blue;
+}
+#btntry:hover {
+    background-color: blue;
+    width: 20%;
+    height: 8%;
+}
